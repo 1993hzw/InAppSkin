@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:skin="http://schemas.android.com/apk/skin"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="?attr/skin_color"
+        android:padding="10dp"
+        android:text="Hello World!"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/img"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="?attr/skin_drawable"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        skin:disable="false" />
+
+    <TextView
+        android:id="@+id/text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="人生的磨难是很多的，所以我们不可对于每一件轻微的伤害都过于敏感。在生活磨难面前，精神上的坚强和无动于衷是我们抵抗罪恶和人生意外的最好武器。"
+        android:textColor="?attr/skin_color"
+        android:textSize="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/img" />
+
+    <RadioGroup
+        android:id="@+id/img_type"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <RadioButton
+            android:id="@+id/theme1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true"
+            android:minWidth="90dp"
+            android:text="默认样式"
+            android:textColor="#000"
+            android:textSize="13dp" />
+
+        <RadioButton
+            android:id="@+id/theme2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="90dp"
+            android:text="换肤样式1"
+            android:textColor="#000"
+            android:textSize="13dp" />
+
+        <RadioButton
+            android:id="@+id/theme3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:minWidth="90dp"
+            android:text="换肤样式2"
+            android:textColor="#000"
+            android:textSize="13dp" />
+
+
+    </RadioGroup>
+
+</android.support.constraint.ConstraintLayout>
